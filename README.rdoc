@@ -6,7 +6,7 @@ This application is from a Skillshare class on Rails
 
 --------------------------------------------------------
 
-= Info to come
+=== Info to come
 
 * System dependencies
 
