@@ -1,13 +1,19 @@
-<p id="notice"><%= notice %></p>
+<% if notice.present? %>
+	<p class = "alert alert-info">
+		<%= notice %>
+	</p>
+<% end %>
+
+<h2>
+  <%= @post.title %>
+</h2>
 
 <p>
-  <strong>Title:</strong>
-  <%= @post.title %>
+  <%= simple_format @post.content %>
 </p>
 
 <p>
-  <strong>Content:</strong>
-  <%= @post.content %>
+  <%= @post.created_at %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
